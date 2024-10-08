@@ -21,20 +21,10 @@ body {
 	width: 480px;
 	border-radius: 10px;
 	box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.2);
-	display: flex;
-	padding: 15px;
-	gap: 12px;
-}
 
-.container {
 	display: flex;
-	flex-direction: column;
-	flex: 1;
-	row-gap: 12px;
-}
-
-.header-title {
-	display: flex;
+	column-gap: 12px;
+	padding: 8px;
 }
 
 .icon {
@@ -48,13 +38,21 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	flex-shrink: 0;
 }
 
 .header {
-	flex-grow: 1;
+	display: flex;
+	justify-content: space-between;
 
-	font-weight: 600;
-	font-size: 19px;
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 8px;
+}
+
+.text {
+	margin-bottom: 12px;
 }
 
 .close-button {
